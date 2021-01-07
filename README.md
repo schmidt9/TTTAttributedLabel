@@ -2,6 +2,10 @@
 
 [![Circle CI](https://circleci.com/gh/TTTAttributedLabel/TTTAttributedLabel.svg?style=svg)](https://circleci.com/gh/TTTAttributedLabel/TTTAttributedLabel) [![Version Status](https://img.shields.io/cocoapods/v/TTTAttributedLabel.svg)](https://cocoapods.org/pods/TTTAttributedLabel) [![codecov](https://codecov.io/gh/TTTAttributedLabel/TTTAttributedLabel/branch/master/graph/badge.svg)](https://codecov.io/gh/TTTAttributedLabel/TTTAttributedLabel) [![license MIT](https://img.shields.io/cocoapods/l/TTTAttributedLabel.svg)](http://opensource.org/licenses/MIT) [![Platform](https://img.shields.io/cocoapods/p/TTTAttributedLabel.svg)](http://cocoadocs.org/docsets/TTTAttributedLabel/)  [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
+## Bugs
+- doesn't correctly recognize links bounds, it is critical when a link consists of just one symbol/letter,
+it recognizes symbol up to first half of its width. 
+**Solution**: use `UITextView` instead
 
 **A drop-in replacement for `UILabel` that supports attributes, data detectors, links, and more**
 
